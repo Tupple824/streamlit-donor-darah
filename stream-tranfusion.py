@@ -19,7 +19,7 @@ Time  = st.text_input('Masukan Berapa Bulan Sejak Donasi Pertama Dengan Range (2
 transfusion_diagnosis =''
 
 # membuat tombol untuk prediksi
-if st.button(' Prediksi Mendonorkan Darah'):
+if st.button('Prediksi Mendonorkan Darah'):
     transfusion_prediction = transfusion_model.predict([[Recency, Frequency, Monetary, Time]])
     
     if(transfusion_prediction[0]==0):
