@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 
 # membaca model
-transfusion_model =  pickle.load(open('blood_transfusion.sav', 'rb'))
+transfusion_model = pickle.load(open('blood_transfusion.sav', 'rb'))
 
 #Judul Web
 st.title(' Data Mining Prediksi  Mendonorkan Darah')
